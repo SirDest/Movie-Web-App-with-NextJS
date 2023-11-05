@@ -5,7 +5,7 @@ const Search = () => {
   return (
     <form className="bg-none flex justify-between w-[300px] lg:w-[525px]  h-[36px] text-black border-[#D1D5DB] text-sm mt-[22px] border-[2px]">
       <input
-        className="text-lg px-3 py-1 outline-none w-[500px] "
+        className="text-lg px-3 py-1 rounded-none outline-none w-[500px] "
         type="search"
         placeholder="What do you want to watch?"
       />
