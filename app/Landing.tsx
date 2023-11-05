@@ -1,14 +1,10 @@
 // "use client";
-import React, { Suspense, useEffect, useState } from "react";
 import Header from "./Header";
-import BgImg from "@/public/Images/bg1.jpg";
 import Image from "next/image";
 import { LiaImdb } from "react-icons/lia";
 import { GiTomato } from "react-icons/gi";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { MoviesType } from "@/typings ";
-import { title } from "process";
-import Loading from "./loading";
 
 export const fetchMovies = async () => {
   const response = await fetch(
@@ -30,6 +26,7 @@ const Landing = async () => {
         <Header />
         <div>
           <Image
+            loading="eager"
             src={apiImage + theMovie.backdrop_path}
             width={1000000}
             height={1000000}

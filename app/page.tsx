@@ -6,13 +6,13 @@ import Loading from "./loading";
 
 const Home = () => {
   return (
-    <Suspense fallback={<Loading />}>
-      <main>
+    <main>
+      <Suspense fallback={<Loading />}>
         <Landing />
-        <Movies />
-        <Footer />
-      </main>
-    </Suspense>
+      </Suspense>
+      <Movies />
+      <Footer />
+    </main>
   );
 };
 export default Home;
