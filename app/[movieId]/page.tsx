@@ -42,7 +42,7 @@ const MovieDetails = async ({ params: { movieId } }: PageProps) => {
               width={10000}
               height={10000}
               alt={movie.title}
-              className="w-full h-[325px] object-contain rounded-[20px]"
+              className="w-full h-[325px] object-cover rounded-[20px]"
             />
           </div>
           <a href="/">

@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "@/public/Images/Logo.png";
+import Logo from "@/public/Images/Darklogo.png";
 import HalfLogo from "@/public/Images/Half-Logo.png";
 import { GoHome } from "react-icons/go";
 import { AiOutlineVideoCamera } from "react-icons/ai";
@@ -13,7 +13,7 @@ const SideBar = () => {
     <div className="hidden md:flex w-fit h-screen py-[40px] px-[20px] flex-col justify-between gap-3 border border-gray-400 rounded-r-[45px]">
       <a href="/">
         <Image
-          src={Logo}
+          src={HalfLogo}
           width={50}
           height={50}
           alt="MovieBox"
@@ -21,11 +21,11 @@ const SideBar = () => {
         duration-500"
         />
         <Image
-          src={HalfLogo}
-          width={50}
-          height={50}
+          src={Logo}
+          width={200}
+          height={200}
           alt="MovieBox"
-          className="block lg:hidden rounded-full hover:scale-110 ease-in-out duration-500"
+          className="lg:block hidden rounded-full hover:scale-110 ease-in-out duration-500"
         />
       </a>
 
