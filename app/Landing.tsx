@@ -24,7 +24,7 @@ const Landing = async () => {
     return (
       <div>
         <Header />
-        <div>
+        <a href={`/${theMovie.id}`}>
           <Image
             loading="eager"
             src={apiImage + theMovie.backdrop_path}
@@ -34,7 +34,7 @@ const Landing = async () => {
             quality={100}
             className="w-full h-screen object-cover z-0"
           />
-        </div>
+        </a>
         <div className="absolute w-[404px] h-fit bg-none sm:left-[95px] top-[158px] left-[20px]">
           <p className="text-[34px] leading-9 w-[350px] h-fit text-white">
             {theMovie.title}

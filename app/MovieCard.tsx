@@ -22,9 +22,9 @@ const MovieCard = async () => {
   return (
     <div className="mt-10 gap-[80px] grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2">
       {moviesList.map((movie) => (
-        <div data-testid="movie-card" className="relative" key={movie.id}>
+        <div className="relative" key={movie.id}>
           <Liked />
-          <a href="/">
+          <a href={`/${movie.id}`}>
             <div className="card bg-none group h-[490px] rounded-[6px]">
               <div className="h-fit w-full text-center">
                 <Image
