@@ -52,12 +52,11 @@ const Landing = async () => {
           <div className="text-white mt-4 max-w-[285px] text-[14px] leading-[18px]">
             <p>{theMovie.overview}</p>
           </div>
-          <a
-            href={`/${theMovie.id}`}
-            className="bg-rose-700 mt-4 px-[16px] py-[6px] flex content-center justify-center items-center gap-2 text-white uppercase rounded-[6px] hover:scale-110 hover:bg-rose-500 ease-in-out duration-500"
-          >
-            <AiFillPlayCircle />
-            View Movie
+          <a href={`/${theMovie.id}`}>
+            <button className="bg-rose-700 mt-4 px-[16px] py-[6px] flex content-center justify-center items-center gap-2 text-white uppercase rounded-[6px] hover:scale-110 hover:bg-rose-500 ease-in-out duration-500">
+              <AiFillPlayCircle />
+              View Movie
+            </button>
           </a>
         </div>
       </div>
