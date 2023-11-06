@@ -29,8 +29,8 @@ const MovieCard = async () => {
               <div className="h-fit w-full text-center">
                 <Image
                   alt={movie.title}
-                  width={200}
-                  height={300}
+                  width={300}
+                  height={400}
                   src={apiImage + movie.poster_path}
                   // placeholder="blur"
                   // src={bodyImg}
