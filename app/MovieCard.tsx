@@ -24,7 +24,7 @@ const MovieCard = async () => {
       {moviesList.map((movie) => (
         <div className="relative" key={movie.id}>
           <Liked />
-          <a href={`/${movie.id}`}>
+          <a href={`/movies/${movie.id}`}>
             <div className="card bg-none group h-[490px] rounded-[6px]">
               <div className="h-fit w-full text-center">
                 <Image
