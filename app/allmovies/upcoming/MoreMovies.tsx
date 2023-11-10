@@ -8,7 +8,7 @@ const MoreMovies = () => {
     <div className="w-full h-fit lg:px-[100px] sm:px-[50px] md:px-[50px]">
       <div className="bg-white w-full h-full">
         <div className="w-full flex flex-col md:flex-row justify-between pt-10 px-5">
-          <p className="text-3xl font-bold">All Top Rated Movies</p>
+          <p className="text-3xl font-bold">All Upcoming Movies</p>
           <div className="flex gap-5 py-3 md:py-0 justify-between">
             <a
               href="/"
@@ -18,17 +18,17 @@ const MoreMovies = () => {
               <AiOutlineRight />
             </a>
             <a
-              href="/popular"
+              href="/allmovies/popular"
               className="text-rose-700 flex items-center justify-center gap-2 hover:text-rose-400 font-semibold text-sm"
             >
               Popular
               <AiOutlineRight />
             </a>
             <a
-              href="/upcoming"
+              href="/allmovies/toprated"
               className="text-rose-700 flex items-center justify-center gap-2 hover:text-rose-400 font-semibold text-sm"
             >
-              Upcoming
+              Top Rated
               <AiOutlineRight />
             </a>
           </div>

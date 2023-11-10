@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { LiaImdb } from "react-icons/lia";
 import { GiTomato } from "react-icons/gi";
 import Image from "next/image";
+import bodyImg from "@/public/Images/content.jpg";
 import { MoviesType } from "@/typings ";
-import Liked from "../Liked";
+import Liked from "../../Liked";
 
 export const fetchMovies = async () => {
   const response = await fetch(
-    "https://api.themoviedb.org/3/movie/popular?api_key=b7a4a649482ae6b85f96f25cfb20fdf5"
+    "https://api.themoviedb.org/3/movie/top_rated?api_key=b7a4a649482ae6b85f96f25cfb20fdf5"
   );
   const data = await response.json();
   const movies: MoviesType[] = data.results;

@@ -1,9 +1,9 @@
-import { FadeLoader } from "react-spinners";
+import { DotLoader } from "react-spinners";
 
 const Loading = () => {
   return (
     <div className="w-full h-fit py-6 items-center font-[40px] place-content-center flex flex-col justify-center">
-      <FadeLoader className="bg-white m-auto" />
+      <DotLoader color="green" className="bg-white m-auto" />
       <p className="mt-8">
         Loading... If it takes time, check internet connection.
       </p>

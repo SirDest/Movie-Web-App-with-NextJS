@@ -4,7 +4,7 @@ import { GiTomato } from "react-icons/gi";
 import Image from "next/image";
 import bodyImg from "@/public/Images/content.jpg";
 import { MoviesType } from "@/typings ";
-import Liked from "../Liked";
+import Liked from "../../Liked";
 
 export const fetchMovies = async () => {
   const response = await fetch(

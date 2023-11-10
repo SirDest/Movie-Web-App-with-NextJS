@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/popular"
+    "app/allmovies/popular"
   ],
   "exclude": ["node_modules"]
 }

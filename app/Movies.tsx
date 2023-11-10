@@ -12,21 +12,21 @@ const Movies = async () => {
           </div>
           <div className="flex gap-5 py-3 md:py-0 justify-between">
             <a
-              href="/upcoming"
+              href="/allmovies/upcoming"
               className="text-rose-700 flex items-center justify-center gap-2 hover:text-rose-400 font-semibold text-sm"
             >
               Upcoming
               <AiOutlineRight />
             </a>
             <a
-              href="/popular"
+              href="/allmovies/popular"
               className="text-rose-700 flex items-center justify-center gap-2 hover:text-rose-400 font-semibold text-sm"
             >
               Popular
               <AiOutlineRight />
             </a>
             <a
-              href="/toprated"
+              href="/allmovies/toprated"
               className="text-rose-700 flex items-center justify-center gap-2 hover:text-rose-400 font-semibold text-sm"
             >
               Top Rated
